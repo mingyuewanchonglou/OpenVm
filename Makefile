@@ -1,7 +1,8 @@
 cc = gcc
-objects = cpu.o log.o main.o types.o utils.o vm.o
-openvm : ${objects}
-	${cc} -o openvm ${objects}
+objects = cpu.o clog.o main.o types.o utils.o ohvm.o graphics.o
+ohvm : ${objects}
+	 ${cc} -o ohvm ${objects} -lSDL2 -lSDL2_ttf
+
 .PHONY : clean
 clean :
-	-rm openvm ${objects}
+	-rm ohvm ohvmcc ${objects}

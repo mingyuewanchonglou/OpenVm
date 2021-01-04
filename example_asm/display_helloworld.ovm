@@ -1,0 +1,17 @@
+;;
+;; @Description: Display Hello World program
+;; @Author: wwhai
+;; @Mail: cnwwhai@gmail.com
+;; @Date: 2020-12-19
+START:
+    MAIN 0x00000000H
+END
+;; ----------------------------------------
+MAIN:
+    CALL PRINT
+END
+;;
+PRINT:
+    ;; print("helloworld")
+END
+STOP
